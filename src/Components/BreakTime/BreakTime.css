@@ -1,0 +1,23 @@
+.times {
+  display: flex;
+  justify-content: space-around;
+}
+.t-btn {
+  padding: 15px;
+  border: 7px;
+  border-radius: 50%;
+}
+.t-btn:hover {
+  background: rgb(118, 238, 160);
+}
+.ex-time {
+  background: #f1f1f1;
+  padding: 7px 22px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.a-btn {
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100%;
+}

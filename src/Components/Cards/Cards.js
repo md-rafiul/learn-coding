@@ -11,7 +11,12 @@ const Cards = (props) => {
           <p>Name: {name}</p>
           <p>Time: {duration} min</p>
         </div>
-        <button className="btn">Add to list</button>
+        <button
+          className="btn"
+          onClick={() => props.addDurationHandler(duration)}
+        >
+          Add to list
+        </button>
       </div>
     </div>
   );

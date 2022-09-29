@@ -1,4 +1,5 @@
 import React from "react";
+import rafi from "./rafi.jpg";
 import "./PersonalDetails.css";
 
 const PersonalDetails = () => {
@@ -9,7 +10,7 @@ const PersonalDetails = () => {
           <h3>Md. Rafiul</h3>
           <p>Tangail</p>
         </div>
-        <img src="../../../public/img/rafi.jpg" alt="" />
+        <img src={rafi} alt="" />
       </div>
     </div>
   );

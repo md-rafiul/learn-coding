@@ -11,7 +11,11 @@ const Body = () => {
       .then((data) => setFakeDatas(data));
   }, []);
 
-  const addDurationHandler = () => {};
+  const [time, setTime] = useState(0);
+  const addDurationHandler = (duration) => {
+    setTime(time + duration);
+  };
+
   return (
     <div className="body">
       <div className="cards-container">
@@ -23,7 +27,7 @@ const Body = () => {
           ></Cards>
         ))}
       </div>
-      <Sidesection></Sidesection>
+      <Sidesection time={time}></Sidesection>
     </div>
   );
 };
