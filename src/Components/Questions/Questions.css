@@ -1,0 +1,14 @@
+.questions-container {
+  padding: 10px 150px;
+}
+
+@media screen and (max-width: 570px) {
+  .questions-container {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 571px) {
+  .questions-container {
+    padding: 15px;
+  }
+}

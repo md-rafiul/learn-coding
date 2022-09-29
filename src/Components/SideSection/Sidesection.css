@@ -2,3 +2,16 @@
   padding: 20px;
   border-left: 15px solid #f1f1f1;
 }
+@media screen and (max-width: 570px) {
+  .side-section {
+    border-left: 0;
+    border-bottom: 15px solid #f1f1f1;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 571px) {
+  .side-section {
+    border-left: 0;
+    border-bottom: 15px solid #f1f1f1;
+  }
+}

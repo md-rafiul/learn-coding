@@ -19,7 +19,7 @@ const Body = () => {
   return (
     <div className="body">
       <div>
-        <h2>Select language: </h2>
+        {/* <h2>Select language: </h2> */}
         <div className="cards-container">
           {fakeDatas.map((fakeData) => (
             <Cards
