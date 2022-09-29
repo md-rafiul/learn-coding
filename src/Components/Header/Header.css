@@ -4,8 +4,13 @@
   border: 1px solid lightgray;
   justify-content: center;
   align-items: center;
+  color: rgb(102, 102, 239);
 }
 .header-icon {
   font-size: 25px;
   margin-right: 7px;
+}
+.header h2 {
+  font-size: 26px;
+  font-weight: 800;
 }

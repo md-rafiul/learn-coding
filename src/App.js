@@ -5,7 +5,7 @@ import Questions from "./Components/Questions/Questions";
 
 function App() {
   return (
-    <div className="">
+    <div className="App">
       <Header></Header>
       <Body></Body>
       <Questions></Questions>

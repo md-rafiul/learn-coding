@@ -6,8 +6,16 @@
 .personal-info {
   margin: 0 0;
 }
+.personal-info h3 {
+  color: rgb(102, 102, 239);
+  padding: 0;
+}
+.personal-info p {
+  margin-top: 0;
+  padding: 0;
+}
 .Personal-details img {
-  height: 44px;
-  width: 44px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
 }
