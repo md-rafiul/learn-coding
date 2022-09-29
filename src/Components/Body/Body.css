@@ -1,0 +1,31 @@
+.body {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.cards-container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 570px) {
+  .body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cards-container {
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 571px) {
+  .body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cards-container {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

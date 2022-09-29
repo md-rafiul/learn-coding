@@ -2,7 +2,7 @@ import React from "react";
 import "./Sidesection.css";
 
 const Sidesection = () => {
-  return <div></div>;
+  return <div>hi</div>;
 };
 
 export default Sidesection;

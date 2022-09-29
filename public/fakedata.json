@@ -1,8 +1,8 @@
 [
-    {"id" : "01", "name": "React", "duration": 50, "img" : "./img/react.png"},
-    {"id" : "02", "name": "Angular", "duration": 15, "img" : "./img/angular.png"},
-    {"id" : "03", "name": "Vue", "duration": 10, "img" : "./img/vue.png"},
-    {"id" : "04", "name": "Python", "duration": 20, "img" : "./img/python.png"},
-    {"id" : "05", "name": "Java", "duration": 30, "img" : "./img/Java.png"},
-    {"id" : "06", "name": "C++", "duration": 40, "img" : "./img/c++.png"}
+    {"id" : "01", "name": "React", "duration": 50, "img" : "../img/react.png"},
+    {"id" : "02", "name": "Angular", "duration": 15, "img" : "../img/angular.png"},
+    {"id" : "03", "name": "Vue", "duration": 10, "img" : "../img/vue.png"},
+    {"id" : "04", "name": "Python", "duration": 20, "img" : "../img/python.png"},
+    {"id" : "05", "name": "Java", "duration": 30, "img" : "../img/Java.png"},
+    {"id" : "06", "name": "C++", "duration": 40, "img" : "../img/c++.png"}
 ]
