@@ -1,0 +1,13 @@
+.Personal-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.personal-info {
+  margin: 0 0;
+}
+.Personal-details img {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}

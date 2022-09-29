@@ -3,10 +3,10 @@
   grid-template-columns: 4fr 1fr;
 }
 .cards-container {
-  padding: 30px;
+  padding: 35px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 @media screen and (max-width: 570px) {
