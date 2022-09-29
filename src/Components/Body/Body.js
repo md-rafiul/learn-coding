@@ -18,15 +18,17 @@ const Body = () => {
 
   return (
     <div className="body">
-      <div className="cards-container">
+      <div>
         <h2>Select language: </h2>
-        {fakeDatas.map((fakeData) => (
-          <Cards
-            fakedata={fakeData}
-            addDurationHandler={addDurationHandler}
-            key={fakeData.id}
-          ></Cards>
-        ))}
+        <div className="cards-container">
+          {fakeDatas.map((fakeData) => (
+            <Cards
+              fakedata={fakeData}
+              addDurationHandler={addDurationHandler}
+              key={fakeData.id}
+            ></Cards>
+          ))}
+        </div>
       </div>
       <Sidesection time={time}></Sidesection>
     </div>

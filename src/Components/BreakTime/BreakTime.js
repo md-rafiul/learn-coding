@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import "./BreakTime.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const BreakTime = (props) => {
+  let time = props.time;
+  const notify = () => {
+    toast("Wow so easy! You have completed todays task!");
+    time = 0;
+    localStorage.removeItem("breakTime");
+  };
   const [breakTime, setBreakTime] = useState(0);
   const breakTimeHandler = () => {
     setBreakTime(10);
@@ -52,7 +60,7 @@ const BreakTime = (props) => {
         <h3>Exercise Details: </h3>
         <div className="ex-time">
           <h4>
-            Exercise Time: {props.time} <small>minutes</small>
+            Exercise Time: {time} <small>minutes</small>
           </h4>
         </div>
         <div className="ex-time">
@@ -60,7 +68,10 @@ const BreakTime = (props) => {
             Break Time: {localTime || breakTime || 0} <small>minutes</small>
           </h4>
         </div>
-        <button className="a-btn">Activity Completed</button>
+        <button className="a-btn" onClick={notify}>
+          Activity Completed
+        </button>
+        <ToastContainer />
       </div>
     </div>
   );
