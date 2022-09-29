@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BreakTime.css";
 
 const BreakTime = (props) => {
+  const [breakTime, setBreakTime] = useState(0);
   const breakTimeHandler = () => {
-    console.log("hi");
+    setBreakTime(10);
+    localStorage.setItem("breakTime", 10);
   };
+  const breakTimeHandler1 = () => {
+    setBreakTime(15);
+    localStorage.setItem("breakTime", 15);
+  };
+  const breakTimeHandler2 = () => {
+    setBreakTime(20);
+    localStorage.setItem("breakTime", 20);
+  };
+  const breakTimeHandler3 = () => {
+    setBreakTime(25);
+    localStorage.setItem("breakTime", 25);
+  };
+  const breakTimeHandler4 = () => {
+    setBreakTime(30);
+    localStorage.setItem("breakTime", 30);
+  };
+
+  const localTime = localStorage.getItem("breakTime");
+
   return (
     <div>
       <div className="select-time">
@@ -13,16 +34,16 @@ const BreakTime = (props) => {
           <button className="t-btn" onClick={breakTimeHandler}>
             10
           </button>
-          <button className="t-btn" onClick={breakTimeHandler}>
+          <button className="t-btn" onClick={breakTimeHandler1}>
             15
           </button>
-          <button className="t-btn" onClick={breakTimeHandler}>
+          <button className="t-btn" onClick={breakTimeHandler2}>
             20
           </button>
-          <button className="t-btn" onClick={breakTimeHandler}>
+          <button className="t-btn" onClick={breakTimeHandler3}>
             25
           </button>
-          <button className="t-btn" onClick={breakTimeHandler}>
+          <button className="t-btn" onClick={breakTimeHandler4}>
             30
           </button>
         </div>
@@ -36,7 +57,7 @@ const BreakTime = (props) => {
         </div>
         <div className="ex-time">
           <h4>
-            Break Time: {10 || 5} <small>minutes</small>
+            Break Time: {localTime || breakTime || 0} <small>minutes</small>
           </h4>
         </div>
         <button className="a-btn">Activity Completed</button>

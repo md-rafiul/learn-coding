@@ -19,6 +19,7 @@ const Body = () => {
   return (
     <div className="body">
       <div className="cards-container">
+        <h2>Select language: </h2>
         {fakeDatas.map((fakeData) => (
           <Cards
             fakedata={fakeData}
